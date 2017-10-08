@@ -1,9 +1,24 @@
 {
-    "name":"Detect-CMS",
-    "type":"library",
-    "autoload":{
-        "psr-0":{
-            "DetectCMS":"src/"
+    "name":"adzon/php-cms-detector",
+    "description": "php cms detector",
+    "homepage": "https://github.com/adzon/php-cms-detector",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "adzon",
+            "email": "76762@qq.com",
+            "homepage": "http://www.huleping.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "laravel/framework": "5.4.*",
+        "laravel/tinker": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DetectCMS": "src"
         }
     }
 }

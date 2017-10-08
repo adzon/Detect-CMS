@@ -1,4 +1,4 @@
-Detect-CMS
+根据指纹判断cms系统
 ==========
 
 PHP Library for detecting CMS
@@ -6,26 +6,13 @@ PHP Library for detecting CMS
 Install
 -------
 
-Add to your composer.json
-
-```json
-{
-    "repositories":[
-        {
-            "type": "vcs",
-            "url": "git@github.com:Krisseck/Detect-CMS.git"
-        }
-    ],
-    "require":{
-        "Detect-CMS":"1.0.*"
-    }
-}
+```bash
+composer require "adzon/php-cms-detector"
 ```
 
 How to use:
 -----------
 
-    include(__DIR__ . "/vendor/autoload.php");
     $domain = "http://google.com";
     $cms = new \DetectCMS\DetectCMS($domain);
     if($cms->getResult()) {
